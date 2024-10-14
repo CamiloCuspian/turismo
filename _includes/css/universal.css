@@ -119,7 +119,9 @@ a {
   }
   
   a:hover {
-    border-bottom-color: var(--grey-3);
+    border-bottom-color: var(--color-btn);
+    color: var(--color-btn);
+    font-weight: 900;
   }
 
 small {

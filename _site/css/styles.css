@@ -103,7 +103,7 @@
 }
 
 .cta-button:active {
-    background-color: darkred;
+    background-color: var(--btn);
     transform: translateY(0.1rem);
 }
         /* Contenedor principal */
@@ -314,7 +314,9 @@ a {
   }
   
   a:hover {
-    border-bottom-color: var(--grey-3);
+    border-bottom-color: var(--color-btn);
+    color: var(--color-btn);
+    font-weight: 900;
   }
 
 small {
