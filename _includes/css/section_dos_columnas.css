@@ -1,0 +1,50 @@
+        /* Contenedor principal */
+
+
+        /* Grid de destinos */
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Tarjeta de destino */
+        .destination-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Imagen del destino */
+        .destination-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+
+        /* Contenido de la tarjeta */
+        .destination-content {
+            padding: 1rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .destination-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .destination-description {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+

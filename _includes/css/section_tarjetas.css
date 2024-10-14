@@ -1,0 +1,42 @@
+.ofertas-semana {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card__img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__content {
+    padding: 20px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+

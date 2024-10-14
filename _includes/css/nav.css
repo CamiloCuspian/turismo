@@ -1,0 +1,63 @@
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: var(--color-main);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    max-width: 260px;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    a{
+        color: #fefefe;
+
+    }
+}
+
+/* Ocultar el checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Icono de la hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fefefe;
+}
+
+/* Mostrar el icono de la hamburguesa en dispositivos pequeños (600px o menos) */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* Ocultar el menú por defecto en dispositivos pequeños */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-toggle:checked + .hamburger + .nav-menu {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+}

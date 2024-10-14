@@ -1,0 +1,23 @@
+.cta-button{
+    display: inline-block;
+    padding: 1rem 3vw;
+    background-color: darkred;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: var(--shadow);
+    object-fit: contain;
+    color: var(--grey-1);
+}
+
+.cta-button:hover{
+    background-color: var(--btn);
+    transform: translateY(-0.2rem);
+}
+
+.cta-button:active {
+    background-color: darkred;
+    transform: translateY(0.1rem);
+}

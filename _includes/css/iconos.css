@@ -1,0 +1,47 @@
+/* Estructura del contenedor de la sección */
+.categories {
+    text-align: center;
+    
+}
+
+
+/* Contenedor flexible para las tarjetas */
+.category-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos individuales para cada tarjeta */
+.category-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px; /* Tamaño fijo de la tarjeta */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    transition: transform 0.3s ease; /* Efecto de hover suave */
+}
+
+.category-item:hover {
+    transform: scale(1.05); /* Ampliar ligeramente al hacer hover */
+}
+
+/* Imagen de icono */
+.category-item img {
+    max-width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Texto debajo del icono */
+.category-item p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Estilo responsivo automático con Flexbox */
+.category-container {
+    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten cuando el espacio es pequeño */
+}
